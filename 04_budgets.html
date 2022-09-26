@@ -13093,12 +13093,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Resource-Allocations">Resource Allocations<a class="anchor-link" href="#Resource-Allocations">&#182;</a></h1><p>In order to to use the clusters, and actually <em>submit a job</em> you will need to associate a resource allocation with an account. Each Agresso account can have multiple resource allocations.</p>
-<p>In the Resource Allocation admins can:</p>
+<h1 id="Budgets">Budgets<a class="anchor-link" href="#Budgets">&#182;</a></h1><p>Each account will have an associated budget, which can be distributed amongst Resource Allocations.</p>
+<p>Account Administrators are able to:</p>
 <ul>
-<li>Assign and configure compute and storage resources</li>
-<li>View job transactions and storage consumption</li>
-<li>Manage the resource allocation membership</li>
+<li>Allocate and adjust budget to Resource Allocations</li>
+<li>Allocate and adjust the storage on Resource Allocations</li>
 </ul>
 
 </div>
@@ -13116,8 +13115,9 @@ div#notebook {
 </ul>
 <p><strong>Questions</strong></p>
 <ul>
-<li>Where can I see the Resource Allocations I have access to?</li>
-<li>How do I set up a Resource Allocation?</li>
+<li>How can I add budget to a resource allocation?</li>
+<li>Where can I see the storage associated with an account?</li>
+<li>How can I adjust the storage associated with an account?</li>
 </ul>
 </div>
 </div>
@@ -13126,51 +13126,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Where-can-I-see-the-Resource-Allocations-I-have-access-to?">Where can I see the Resource Allocations I have access to?<a class="anchor-link" href="#Where-can-I-see-the-Resource-Allocations-I-have-access-to?">&#182;</a></h2><p>You can navigate to the resource allocation screen to see what resource allocations you have on the system from the portal home page:</p>
-<p><img src="./images/RA1.png" alt="Research Finance Portal"></p>
-<p>or from the sidebar <code style="background-color:#F7F7F7;border:1px solid #CFCFCF">Resource Allocations</code> menu:</p>
-<p><img src="./images/RA2.png" alt="Research Finance Portal"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Once you’ve selected Resource Allocations you will see a list of Resource Allocations you have access to and beside each a set of options for Managing Resources within the Allocation, and viewing transactions associated with each Resource Allocation.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-do-I-add-a-Resource-Allocation?">How do I add a Resource Allocation?<a class="anchor-link" href="#How-do-I-add-a-Resource-Allocation?">&#182;</a></h2><p>Navigate to the resource allocation screen and click the <code style="background-color:#F7F7F7;border:1px solid #CFCFCF">create new resource allocation</code> button:</p>
-<p><img src="./images/SetUpRA1.png" alt="Portal Account"></p>
-<p>From the select account page pick which of your Agresso accounts you wish to set up a Resource Allocation for:</p>
-<p><img src="./images/SetUpRA2.png" alt="Portal Account"></p>
-<p>Now you can fill in details of the RA, inlcuding the title, description, the status and set start and end dates:</p>
-<p><img src="./images/SetUpRA3.png" alt="Portal Account"></p>
-<p>Next you can grant the <em>Resource Allocation Administrator</em> role to users: This gives full access to manage the resource allocation allowing users the ability to:</p>
-<ul>
-<li>assign other members to the resource allocation</li>
-<li>add/remove, and configuring resources</li>
-<li>submitting jobs against this resource allocation in Slurm </li>
-<li>viewing the job and storage transactions against the resource allocation. </li>
-</ul>
-<p>To assign this role to another person, type the name or the username in the search box and click add member:</p>
-<p><img src="./images/SetUpRA4.png" alt="Portal Account"></p>
-<p>Next you can grant the Resource Allocation User role to users. This role will allow a user to:</p>
-<ul>
-<li>Submit jobs against a resource allocation on the cluster </li>
-<li>View the resource allocation but make no changes to it</li>
-</ul>
-<p><img src="./images/SetUpRA5.png" alt="Portal Account"></p>
-<p>Finally we can add a cluster to the resource allocation:</p>
-<p><img src="./images/SetUpRA6.png" alt="Portal Account"></p>
-<p>and comfigure the compute and storage options:</p>
-<p><img src="./images/SetUpRA7.png" alt="Portal Account">
-<img src="./images/SetUpRA8.png" alt="Portal Account"></p>
+<h2 id="How-can-I-add-budget-to-a-Resource-Allocation?">How can I add budget to a Resource Allocation?<a class="anchor-link" href="#How-can-I-add-budget-to-a-Resource-Allocation?">&#182;</a></h2><p>You add budget to a resource allocation by opening up your account page. Beside the account you would like to adjust the budget for click the piggy bank icon.</p>
+<p><img src="./images/Budgets1.png" alt="Research Finance Portal"></p>
+<p>You will now see an overview of the finances associated with this account, as well as any Resource Allocations for the account. You can adjust the budget by clicking on the scales icon beside the Resource Allocation you would like to make an adjustment for.</p>
+<p><img src="./images/Budgets2.png" alt="Research Finance Portal"></p>
 
 </div>
 </div>
@@ -13183,9 +13142,7 @@ div#notebook {
 </h3>
     <p>You should now be able to</p>
 <ul>
-<li>Set up resource allocations</li>
-<li>Understand and be able to assign Resource Allocation Administrator and Resource Allocation Useer roles to users</li>
-<li>Configure compute resources and storage associated with an resource allocations</li>
+<li>Add budget to a Resource Allocation</li>
 </ul>
 </div>
 </div>
