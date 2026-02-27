@@ -12956,9 +12956,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .hll { background-color: #ffffcc }
 .highlight { background: #f8f8f8; }
 .highlight .c { color: #3D7B7B; font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { border: 1px solid #F00 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
-.highlight .o { color: #666666 } /* Operator */
+.highlight .o { color: #666 } /* Operator */
 .highlight .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #9C6500 } /* Comment.Preproc */
@@ -12967,6 +12967,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
 .highlight .gr { color: #E40000 } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #008400 } /* Generic.Inserted */
@@ -12974,34 +12975,34 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .gt { color: #04D } /* Generic.Traceback */
 .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
 .highlight .kp { color: #008000 } /* Keyword.Pseudo */
 .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #B00040 } /* Keyword.Type */
-.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .m { color: #666 } /* Literal.Number */
 .highlight .s { color: #BA2121 } /* Literal.String */
 .highlight .na { color: #687822 } /* Name.Attribute */
 .highlight .nb { color: #008000 } /* Name.Builtin */
-.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
-.highlight .no { color: #880000 } /* Name.Constant */
-.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .nc { color: #00F; font-weight: bold } /* Name.Class */
+.highlight .no { color: #800 } /* Name.Constant */
+.highlight .nd { color: #A2F } /* Name.Decorator */
 .highlight .ni { color: #717171; font-weight: bold } /* Name.Entity */
 .highlight .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nf { color: #00F } /* Name.Function */
 .highlight .nl { color: #767600 } /* Name.Label */
-.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nn { color: #00F; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #19177C } /* Name.Variable */
-.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-.highlight .w { color: #bbbbbb } /* Text.Whitespace */
-.highlight .mb { color: #666666 } /* Literal.Number.Bin */
-.highlight .mf { color: #666666 } /* Literal.Number.Float */
-.highlight .mh { color: #666666 } /* Literal.Number.Hex */
-.highlight .mi { color: #666666 } /* Literal.Number.Integer */
-.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #BBB } /* Text.Whitespace */
+.highlight .mb { color: #666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666 } /* Literal.Number.Float */
+.highlight .mh { color: #666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666 } /* Literal.Number.Oct */
 .highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
@@ -13016,12 +13017,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .fm { color: #00F } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+.highlight .il { color: #666 } /* Literal.Number.Integer.Long */
     </style>
 
 
@@ -13111,6 +13112,7 @@ div#notebook {
 <ul>
 <li>Where can I see the accounts I have access to?</li>
 <li>How do I set up an account?</li>
+<li>How do I view account storage quotas?</li>
 </ul>
 </div>
 </div>
@@ -13130,7 +13132,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Once you’ve selected Accounts you will see a list of accounts you have access to and against each account listed a set of options for Managing/ Viewing account, allocating budgets, and viewing finance will be available.</p>
+<p>Once you’ve selected Accounts you will see a list of accounts you have access to and against each account listed a set of options for Managing/ Viewing account, allocating budgets, viewing finance, and viewing storage will be available.</p>
 
 </div>
 </div>
@@ -13194,6 +13196,79 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Account-Storage-(Account-level-quotas)">Account Storage (Account-level quotas)<a class="anchor-link" href="#Account-Storage-(Account-level-quotas)">&#182;</a></h2><p>Account Storage allows you to view the storage quota associated with an account and monitor the latest usage.</p>
+<p><strong>Questions</strong></p>
+<ul>
+<li>Where do I view Account Storage?</li>
+<li>What do the quota and usage fields mean?</li>
+<li>Who can change storage quotas?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Where-do-I-view-Account-Storage?">Where do I view Account Storage?<a class="anchor-link" href="#Where-do-I-view-Account-Storage?">&#182;</a></h2><ol>
+<li>Go to <strong>Accounts</strong> from the left sidebar.</li>
+<li>Locate the account you want to view.</li>
+<li>In the <strong>Actions</strong> column, select the <strong>Storage Allocations</strong> icon.</li>
+</ol>
+<p><img src="./images/Account_Storage_01.png" alt="Accounts – Storage Allocations"></p>
+<p>This opens the <strong>Account Storage</strong> page for the selected account.</p>
+<p><img src="./images/Account_Storage_02.png" alt="Account Storage Page"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Adding-storage-to-an-account">Adding storage to an account<a class="anchor-link" href="#Adding-storage-to-an-account">&#182;</a></h2><p>On the <strong>Account Storage</strong> page:</p>
+<ol>
+<li>Select a storage option from <strong>“Please select storage option…”</strong>.</li>
+<li>Click <strong>Add</strong>.</li>
+</ol>
+<p><strong>Permissions</strong></p>
+<ul>
+<li>Only <strong>Research Account Administrators</strong> can set or change storage quotas.</li>
+<li>If you are <strong>Research Account Viewer</strong>, you may still be able to <em>view</em> quotas and usage, but you must contact the Research Computing team to request changes.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Understanding-the-storage-table">Understanding the storage table<a class="anchor-link" href="#Understanding-the-storage-table">&#182;</a></h2><p>Each row represents a storage allocation attached to the account (for example, <strong>Nimbus Campaign</strong>).</p>
+<ul>
+<li><strong>Total Account Allocation (GB):</strong> The quota assigned at the account level.</li>
+<li><strong>Total Quota Across Resource Allocations (GB):</strong> The total quota distributed across allocations under the account.</li>
+<li><strong>Total Latest Usage (GB):</strong> Latest reported usage (updated periodically during the day).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Editing-an-existing-storage-quota-(Admins-only)">Editing an existing storage quota (Admins only)<a class="anchor-link" href="#Editing-an-existing-storage-quota-(Admins-only)">&#182;</a></h2><p>If you have administrator permissions, use the <strong>Edit (pencil)</strong> action on the right-hand side of the storage row to adjust the quota.</p>
+<p>If you do not have permissions, contact the Research Computing team and include:</p>
+<ul>
+<li>The <strong>Account ID</strong></li>
+<li>The <strong>storage name</strong> (e.g., “Nimbus Campaign”)</li>
+<li>The <strong>requested quota (GB)</strong> and a brief reason</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <div class="w3-panel w3-leftbar w3-border-green w3-pale-green w3-padding-small">
     <h3 id="-Key-Points%3A%20"><i class="fa fa-key"></i> Key Points:
 </h3>
@@ -13202,6 +13277,7 @@ div#notebook {
 <li>Set up accounts</li>
 <li>Know where to find information about getting a new HPC budget on an Agresso account</li>
 <li>Understand and be able to assign Account Administrator and Account Viewer roles to users</li>
+<li>View account-level storage allocations and understand quota vs usage</li>
 </ul>
 </div>
 </div>
